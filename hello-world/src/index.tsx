@@ -1,9 +1,16 @@
 import { render } from 'solid-js/web';
 import type { Component } from 'solid-js';
 
+const click = () => {
+  console.log("Click!");
+};
+
 const App: Component = () => {
   return (
-    <div>Hello World!!!</div>
+    <div>
+      <div>Hello World!!!</div>
+      <button onClick={click}>Test</button>
+    </div>
   );
 };
 
